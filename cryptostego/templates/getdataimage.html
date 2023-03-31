@@ -1,0 +1,32 @@
+{% extends 'imagebase.html' %}
+
+{% block main %}
+    <p>Select your image:</p>
+    <form action="" method="post">
+        {% csrf_token %}
+        <!-- {% for i in images %}
+        <p>{{i.image_id}}</p>
+        <img src="{{i.image.url}}" alt="">
+        {% endfor %}
+        <br><br> -->
+        <label for="left">Left Image ID</label>
+        <input type="password" name="left" id="left"><br><br>
+        <label for="right">Right Image ID</label>
+        <input type="password" name="right" id="right"><br><br>
+        <label for="pw">Password</label>
+        <input type="text" value="password" name="pw" id="pw"><br><br>
+        <!-- <select name="left" id="left">
+            <option value="">Select Left Image</option>
+            {% for i in images %}
+            <option value="{{i.image_id}}">{{i.image_id}}</option><br><br>
+            {% endfor %}
+        </select>
+        <select name="right" id="right">
+            <option value="">Select Right Image</option>
+            {% for i in images %}
+            <option value="{{i.image_id}}">{{i.image_id}}</option><br><br>
+            {% endfor %}
+        </select> -->
+        <input type="submit">
+    </form>
+{% endblock %}

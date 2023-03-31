@@ -1,0 +1,12 @@
+{% extends 'imagebase.html' %}
+
+{% block main %}
+    <h1>Left image</h1>
+    <img src="{{left_image.image.url}}" alt="">
+    <h1>right image</h1>
+    <img src="{{right_image.image.url}}" alt="">
+    <h1>Joined Image</h1>
+    <img src="/media/joined.png" alt="">
+    <h1>Your data:</h1>
+    <p>{{pt}}</p>
+{% endblock %}

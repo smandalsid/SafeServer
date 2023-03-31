@@ -1,0 +1,27 @@
+/* Set styles for the navigation links */
+*{
+    background-color: green;;
+}
+
+nav {
+    display: flex; /* display the links in a row */
+    justify-content: space-between; /* align the links evenly across the navbar */
+    background-color: #333; /* set background color */
+    padding: 10px; /* add some padding around the links */
+    color: #fff; /* set text color */
+  }
+  
+  /* Set styles for the navigation links */
+  nav a {
+    text-decoration: none; /* remove underline */
+    color: inherit; /* inherit the color from the navbar */
+    font-weight: bold; /* set text to bold */
+    padding: 5px 10px; /* add some padding around the links */
+  }
+  
+  /* Set styles for the active link */
+  nav a.active {
+    background-color: #fff; /* set background color */
+    color: #333; /* set text color */
+  }
+  

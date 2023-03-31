@@ -1,0 +1,16 @@
+{% extends 'imagebase.html' %}
+
+{% block main %}
+    <form action="" method="post" enctype="multipart/form-data">
+        {% csrf_token %}
+        <!-- <label for="image_id">Image ID</label>
+        <input type="text" name="image_id" id="image_id" value="1"><br><br> -->
+        <label for="image">Image</label>
+        <input type="file" name="image" id="image"><br><br>
+        <label for="pt">Plain Text</label>
+        <input type="text" name="pt" id="pt" value="hello"><br><br>
+        <label for="pw">Password</label>
+        <input type="text" name="pw" id="pw" value="password"><br><br>
+        <input type="submit">
+    </form>
+{% endblock %}

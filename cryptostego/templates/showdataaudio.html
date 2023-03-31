@@ -1,0 +1,16 @@
+{% extends 'audiobase.html' %}
+
+{% block main %}
+<!-- <img src="{{left_audio.audio.url}}" alt="">
+    <img src="{{right_audio.audio.url}}" alt="">
+    <h1>Joined Image</h1>
+    <img src="/media/joined.wav" alt=""> -->
+    <h1>Left audio</h1>
+    <audio controls><source src="{{left_audio.audio.url}}"></audio>
+    <h1>Right audio</h1>
+    <audio controls><source src="{{right_audio.audio.url}}"></audio>
+    <h1>Joined audio</h1>
+    <audio controls><source src="/media/joined.wav"></audio>
+    <h1>Your data:</h1>
+    <p>{{pt}}</p>
+{% endblock %}
